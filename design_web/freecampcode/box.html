@@ -34,6 +34,24 @@
     color: #fff;
     padding: 20px;
   }
+  
+    .first {
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+  }
+  .second {
+    background-color: blue;
+    position: absolute;
+    left: 40px;
+    top: 250px;
+    z-index: 1;
+  }
+  .box1{
+	  width:10%;
+	  height:200px;
+	  margin-top:50px;
+  }
 </style>
 </head>
 
@@ -45,7 +63,8 @@
   <h5 class="box blue-box">padding</h5>
   <h5>margin</h5>
 </div>
-
+<div class="first box1"></div>
+<div class="second box1"></div>
 
 </body>
 </html>

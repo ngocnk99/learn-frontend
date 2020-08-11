@@ -17,6 +17,15 @@
     font-size: 16px;
     font-family: monospace;
   }
+  
+  a:hover{
+	  color:#00F;
+  }
+  
+    .links {
+    text-align: left;
+    color: black;
+  }
     .thick-green-border {
     border-color: green;
     border-width: 5px;
@@ -26,6 +35,7 @@
 
   .smaller-image {
     width: 100px;
+	 opacity: 0.7;
   }
   
   [type ='checkbox']{
@@ -35,23 +45,60 @@
   type='radio'] {
   	margin: 20px 0px 20px 0px;
 }
+  #navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
 
+
+    width: 100%;
+    background-color: #767676;
+  }
+    nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+  }
+  nav li {
+    display: inline;
+    margin-right: 30px;
+  }
+  
+      #left {
+      float: left;
+      width: 20%;
+    }
+    #right {
+      float: left;
+      width: 80%;
+    }
 </style>
 </head>
 
 <body>
+    <nav id="navbar">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
  <h2 style="color:#FF6;">CatPhotoApp</h2>
  <main>
   <p>Click here to view more <a href="https://www.google.com/search?q=cat+photo&sxsrf=ALeKk03zhR9lICNr1roeNV6_mJ6Lo9Tf5w:1596877807163&source=lnms&tbm=isch&sa=X&ved=2ahUKEwix9MezoYvrAhV5xosBHYnkC7IQ_AUoAXoECA0QAw&biw=1536&bih=754">cat photos</a>.</p>
   
-  <a href="https://www.google.com/search?q=cat+photo&sxsrf=ALeKk03zhR9lICNr1roeNV6_mJ6Lo9Tf5w:1596877807163&source=lnms&tbm=isch&sa=X&ved=2ahUKEwix9MezoYvrAhV5xosBHYnkC7IQ_AUoAXoECA0QAw&biw=1536&bih=754"><img class= "thick-green-border	smaller-image" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
-  <div>
+  <a href="https://www.google.com/search?q=cat+photo&sxsrf=ALeKk03zhR9lICNr1roeNV6_mJ6Lo9Tf5w:1596877807163&source=lnms&tbm=isch&sa=X&ved=2ahUKEwix9MezoYvrAhV5xosBHYnkC7IQ_AUoAXoECA0QAw&biw=1536&bih=754"><img class= "thick-green-border	smaller-image" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a><br>
+  
+   <a href="https://en.wikipedia.org/wiki/Sergey_Brin" target="_blank" class="links">Sergey Brin</a>
+<div>
+  	<div id="left">
    <p>Things cats love:</p>
    <ul>
     <li>cat nip</li>
     <li>laser pointers</li>
     <li>lasagna</li>
    </ul>
+   </div>
+   
+   <div id="right">
    <p>Top 3 things cats hate:</p>
    <ol>
     <li>flea treatment</li>
@@ -59,6 +106,9 @@
     <li>other cats</li>
    </ol>
    </div>
+   </div>
+
+
   <form id="cat-photo-form"action="https://freecatphotoapp.com/submit-cat-photo">
     <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
     <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
