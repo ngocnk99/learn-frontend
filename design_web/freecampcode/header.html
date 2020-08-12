@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+  header {
+    background-color: hsl(180, 90%, 35%);
+    color: #FFFFFF;
+  }
+
+  nav {
+  background-color: hsl(180, 80%, 25%);
+  }
+
+  h1 {
+    text-indent: 10px;
+    padding-top: 10px;
+  }
+
+  nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+  }
+
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover{
+    color:#009;
+  }
+  p:hover{
+	  transform: scale(2.0);
+	  transform: skewX(24deg);
+  }
+  
+  
+    .ball {
+    width: 40px;
+    height: 40px;
+    margin-top: -32px ;
+    position: fixed;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    border-radius: 50%;
+  }
+  #ball1 {
+    left: 30%;
+  }
+  #ball2 {
+    left: 75%;
+	transform: scale(1.5);
+  }
+</style>
+</head>
+
+<body>
+<header>
+  <h1>Cooking with FCC!
+  <p class="ball" id= "ball1"></p>
+  <p class="ball" id= "ball2"></p></h1>
+  
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Classes</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+</body>
+</html>
