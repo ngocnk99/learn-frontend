@@ -39,7 +39,7 @@
   }
   p:hover{
 	  transform: scale(2.0);
-	  transform: skewX(24deg);
+	  transform: skewX(24deg) ;
   }
   
   
@@ -54,14 +54,34 @@
       #ffcccc
     );
     border-radius: 50%;
+
   }
+   
   #ball1 {
     left: 30%;
+		   animation-duration: 4s;
+    animation-name: move;
+	 animation-iteration-count: infinite;
+	  animation-timing-function: ease-in-outt;
   }
   #ball2 {
     left: 75%;
-	transform: scale(1.5);
+	transform: scale(0.6) rotate(0deg);
   }
+
+  @keyframes move {
+    0% {
+      left:30%;
+    }
+	 50% {
+      left:75%;
+	  opacity: 0.1;
+	  transform: scale(0.6) ;
+    }
+	100%{
+		left:30%;
+		opacity: 1;
+		transform: scale(1) );
 </style>
 </head>
 
