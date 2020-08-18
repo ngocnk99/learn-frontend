@@ -11,6 +11,8 @@
 
   h2 {
     font-family: Lobster;
+	color:#FF6;
+	padding-top:10px;
   }
 
   p {
@@ -75,13 +77,15 @@
 </head>
 
 <body>
+	<header>
     <nav id="navbar">
       <ul>
         <li><a href="">Home</a></li>
         <li><a href="">Contact</a></li>
       </ul>
     </nav>
- <h2 style="color:#FF6;">CatPhotoApp</h2>
+ <h2>CatPhotoApp</h2>
+ </header>
  <main>
   <p>Click here to view more <a href="https://www.google.com/search?q=cat+photo&sxsrf=ALeKk03zhR9lICNr1roeNV6_mJ6Lo9Tf5w:1596877807163&source=lnms&tbm=isch&sa=X&ved=2ahUKEwix9MezoYvrAhV5xosBHYnkC7IQ_AUoAXoECA0QAw&biw=1536&bih=754">cat photos</a>.</p>
   
@@ -107,8 +111,8 @@
    </ol>
    </div>
    </div>
-
-
+<fieldset>
+	 <legend> your choose  </legend>
   <form id="cat-photo-form"action="https://freecatphotoapp.com/submit-cat-photo">
     <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
     <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
@@ -118,6 +122,7 @@
     <input type="text" placeholder="cat photo URL" required>
     <button type="submit">Submit</button>
   </form>
+  </fieldset>
  </main>
 
 </body>
