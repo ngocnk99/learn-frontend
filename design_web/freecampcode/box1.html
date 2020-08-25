@@ -41,6 +41,32 @@
 	  justify-content:space-evenly; /*	space-around space-between flex-start*/
   }
 
+ .d1{background:LightSkyBlue;}
+  .d2{background:LightSalmon;}
+  .d3{background:PaleTurquoise;}
+  .d4{background:LightPink;}
+  .d5{background:PaleGreen;grid-area: advert;}
+
+  .container {
+    font-size: 40px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    /*phan chia ty le giua cac o cua cot va hang */
+
+    grid-template-columns: 1fr 30%  2fr;
+	grid-template-rows: repeat(3,50px); /* 50px 50 px 50 px*/
+	
+    /*tao khoag chong giua hang va cot */
+	grid-column-gap: 10px;
+	grid-row-gap: 5px;
+	/* tuong duong grid-gap: 10px 5px; */
+	    grid-template-areas:
+      "header header header"
+      "advert content content"
+      "footer footer footer";
+  
+  }
 </style>
 </head>
 
@@ -52,6 +78,13 @@
 <div class="box-container a1">
   <div id="box-1"></div>
   <div id="box-2"></div>
+</div>
+<div class="container">
+  <div class="d1">1</div>
+  <div class="d2">2</div>
+  <div class="d3">3</div>
+  <div class="d4">4</div>
+  <div class="d5">5</div>
 </div>
 
 
