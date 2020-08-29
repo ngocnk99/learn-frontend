@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Site title</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>header</title>
+<style>
+  header {
+    background-color: hsl(180, 90%, 35%);
+    color: #FFFFFF;
+	padding-bottom:20px;
+  }
+
+
+
+  h1 {
+    text-indent: 10px;
+    padding-top: 10px;
+  }
+	
+	 ul {
+		 position:sticky;
+		 top:0;
+  background-color: hsl(180, 80%, 25%);
+  margin: 0;
+  padding: 0;
+  /*overflow: hidden;*/
+  list-style-type: none;
+
+  /*position: sticky; 
+  top: 0;*/
+  }
+
+  li {
+    display:inline-block;	
+  }
+  li a.active {
+	background-color: 	rgb(30, 65, 95);
+}
+  li a, .dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn{
+    color:#009;
+  }
+  
+  li. dropdown{
+  	display: inline-block;
+	position:	relative;
+  }
+  
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+  .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  p:hover{
+	  transform: scale(2.0);
+	  transform: skewX(24deg) ;
+  }
+  
+  
+    .ball {
+    width: 40px;
+    height: 40px;
+    margin-top: -32px ;
+    position: fixed;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    border-radius: 50%;
+
+  }
+   
+  #ball1 {
+    left: 30%;
+		   animation-duration: 4s;
+    animation-name: move;
+	 animation-iteration-count: infinite;
+	  animation-timing-function: ease-in-outt;
+  }
+  #ball2 {
+    left: 75%;
+	transform: scale(0.6) rotate(0deg);
+  }
+
+  @keyframes move {
+    0% {
+      left:30%;
+    }
+	 50% {
+      left:75%;
+	  opacity: 0.1;
+	  transform: scale(0.6) ;
+    }
+	100%{
+		left:30%;
+		opacity: 1;
+		transform: scale(1) );
+</style>
+</head>
+
+<body>
+<header>
+  <h1>Cooking with FCC!
+  <p class="ball" id= "ball1"></p>
+  <p class="ball" id= "ball2"></p></h1>
+</header>  
+
+   <ul id="navbar">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Classes</a></li>
+      <li class="dropdown">
+	  	<a href="#" class="dropbtn">Contact</a>
+		<div class="dropdown-content">
+          <a href="#">Link 1</a>
+      	  <a href="#">Link 2</a>
+     	  <a href="#">Link 3</a>
+  	    </div>
+	  </li>
+    </ul>
+	
+<iframe src="../freecampcode/fb.html" height="400" width="100%" title="Iframe Example"></iframe>
+ <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  
+
+
+
+</body>
+</html>
