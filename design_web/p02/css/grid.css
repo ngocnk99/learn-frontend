@@ -1,0 +1,52 @@
+
+  body, html { 
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+  .container {
+    font-size: 1.5em;
+    height: 100%;   
+	 width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      "advert header"
+      "advert content"
+      "advert footer";
+  }
+  .item1 {
+    background: LightSkyBlue;
+    grid-area: header;
+  }
+
+  .item2 {
+    background: LightSalmon;
+    grid-area: advert;
+  }
+
+  .item3 {
+    background: PaleTurquoise;
+    grid-area: content;
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+  }
+
+  .item4 {
+    background: lightpink;
+    grid-area: footer;
+  }
+
+  .itemOne {
+    background: PaleGreen;
+  }
+
+  .itemTwo {
+    background: BlanchedAlmond;
+	
+  }
