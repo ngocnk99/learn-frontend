@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6rem;
+}
