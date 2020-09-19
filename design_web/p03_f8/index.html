@@ -6,8 +6,9 @@
     <title>shop</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="assets/css/base.css" type="text/css">
+    
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    <link href="assets/font/fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet"> 
 </head>
 <body>
     <div class="main">
@@ -16,20 +17,41 @@
 
                 <nav class="header__navbar">
                     <ul class="header__navbar--list">
-                        <li class="header__navbar--item separate">
-                            <a href="" class="header__navbar--item--link">Vào cửa hàng trên ứng dụng </a>
+                        <li class="header__navbar--item separate header__navbar--item--has-qr">
+                            <a href="" class="header__navbar--item--link">Vào cửa hàng trên ứng dụng F8 shop</a>
+                            <div class="header__qr">             
+                                <img src="assets/image/QR_code.png" alt="QR coed" class="header__qr--img">
+                                <div class="header__appdl">
+                                    <a href="">
+                                        <img src="assets/image/ggplay.png" alt="google play" class="header__img--googleplay"> 
+                                    </a>
+                                    <a href="">
+                                        <img src="assets/image/appstore.png" alt="apstore" class="header__img--appstore">
+                                    </a>
+                                </div>
+                            </div>
                         </li>
-                        <li class="header__navbar--item">
-                            <a href="" class="header__navbar--item--link">alo2</a>
+                        <li class="header__navbar--item">Kết nối
+                            <a href="" class="header__navbar--item--link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar--item--link">
+                                <i class="fab fa-instagram"></i>
+                            </a>                            
                         </li>
                     </ul>
                     
                     <ul class="header__navbar--list">
                         <li class="header__navbar--item">
-                            <a href="" class="header__navbar--item--link">Thông báo
+                                <i class="fas fa-bell"></i>
+                                Thông báo
+                            </a>    
                         </li>
                         <li class="header__navbar--item">
-                            <a href="" class="header__navbar--item--link">Hỗ trợ</a>
+                            <a href="" class="header__navbar--item--link">
+                                <i class="fas fa-question"></i>
+                                 Hỗ trợ
+                            </a>
                         </li>
                         <li class="header__navbar--item strong separate">
                             <a href="" class="header__navbar--item--link">Đăng ký  </a>

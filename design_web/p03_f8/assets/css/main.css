@@ -1,3 +1,4 @@
+
 .header{
     height: 120px;
     background-image: linear-gradient(0,#fe6433,#f53e2d);
@@ -10,6 +11,9 @@
 }
 .header__navbar--list{
     list-style: none;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    margin-top: 4px;
 }
 
 .header__navbar--item, .header__navbar--item--link{
@@ -22,12 +26,15 @@
 .header__navbar--item{
     margin: 0 8px;
     position: relative;
+    
 }
+
+
 .strong{
    font-weight: 400; 
 }
 
-.separate::after{
+.separate::after{  /* tao hieu ung nay , yeu cau element chua no mang relative */
     content:"";
     display: block;
     position: absolute;
@@ -39,5 +46,63 @@
     transform: translateY(-55%);
 }
 
+.header__navbar--item:hover,
+.header__navbar--item--link:hover{
+    color: rgba(255,255,255,0.7);
+    cursor: pointer;
+}
 
+.header__navbar--item--has-qr:hover .header__qr{
+    display: block;
+}
+.header__qr{
+    width: 180px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 120%;
+    padding: 8px;
+    border-radius: 10%;
+    display: none;
+    animation: fadeIn ease 2s;
+}
 
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.header__qr::before{
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    top:-16px;
+    left:0;
+    content: "";
+    display: block;
+   
+
+}
+
+.header__qr--img{
+    width: 100%;
+}
+
+.header__appdl{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__img--googleplay{
+    height: 15px;
+    margin-left: 10px;  
+}
+
+.header__img--appstore{
+    height: 15px;
+    margin-right: 10px;
+}
