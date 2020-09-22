@@ -8,7 +8,7 @@ a {
     padding: 15px 20px;
     position: relative;
   }
-  a:after {    
+  a::after {    
     content: "";
     display: block;
     height: 2px;
@@ -18,7 +18,12 @@ a {
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
-  a:hover:after { 
+  a:hover::after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+  a.active::after{
     width: 100%; 
     left: 0; 
   }

@@ -65,6 +65,7 @@
     border-radius: 10%;
     display: none;
     animation: fadeIn ease 2s;
+    will-change: opacity;
 }
 
 @keyframes fadeIn{
@@ -121,8 +122,20 @@
     background-color: white;
     animation: headerNotify ease-in 0.2s;
     transform-origin: calc(100%-2opx) right;
+    will-change: opactity, transform;
     display: none;
 }
+
+.header__notify::after{
+    content: "";
+    border:  solid;
+    border-width: 20px 30px;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    top: -26px;
+    right: 0px;
+}
+
 
 @keyframes headerNotify{
     0%{

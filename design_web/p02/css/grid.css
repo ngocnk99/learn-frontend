@@ -17,7 +17,7 @@
     grid-template-areas:
       "advert header"
       "advert content"
-      "advert footer";
+      "footer footer";
   }
   .item1 {
     background: LightSkyBlue;
@@ -30,10 +30,12 @@
   }
 
   .item3 {
+    grid-area: content;
     background: PaleTurquoise;
     grid-area: content;
     display: grid;
     grid-template-columns: auto 1fr;
+    
 
   }
 
