@@ -9,50 +9,62 @@
     <link rel="stylesheet" href="assets/css/base.css" type="text/css">
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
     <link href="assets/font/fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet"> 
+    <style>
+        a{
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
 </head>
 <body>
-    <div class="auth--form">
-        <div class="auth--form__container">
-             <div class="auth--form__header">
-            <h3 class="auth--form__header">Đăng nhập</h3>
-            <span class="auth--form__swtich">Đăng ký</span>
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+
+          <div class="auth--form"> 
+                <div class="auth--form__container">
+                     <div class="auth--form__header">
+                    <h3 class="auth--form__header">Đăng nhập</h3>
+                    <span class="auth--form__swtich">Đăng ký</span>
+                </div>
+
+                <div class="auth--form__form">
+                    <div class="auth--form__group">
+                        <input type="text" class="autho--form__input" placeholder="Email của bạn">
+                    </div>
+                    <div class="auth--form__group">
+                        <input type="text" class="autho--form__input" placeholder="Mật khẩu của bạn">
+                    </div>
+                </div>
+
+                <div class="auth--form_aside">
+                   <div class="auth-form__help">
+                       <a href="" class="auth-form__link">Quên mật khẩu</a>
+                       <span class="auth--form_aside--space"></span>
+                       <a href="" class="auth-form__link">Cần trợ giúp</a>
+                   </div>
+                </div>    
+
+                <div class="autho--form__controls">
+                    <button class="btn"> <a href="index.html"> TRỞ LẠI</a></button>
+                    <button class="btn btn-primary">ĐĂNG NHẬP</buton>
+                </div>
+                </div>
+
+                <div class="auth--form__social">
+                    <a href="" class=" auth--form__social--fb btn--icon">
+                        <i class="auth--form__social--icon fab fa-facebook-square"></i> 
+                        <span class="auth--form__social--text">Đăng nhập với facebook</span>      
+                    </a>
+
+                    <a href="" class="auth--form__social--gg btn--icon">
+                        <i class="auth--form__social--icon fab fa-google"></i>
+                        <span class="auth--form__social--text"> Đăng nhập với google</span>                                
+                    </a>
+                </div>
+
+            </div> 
         </div>
-
-        <div class="auth--form__form">
-            <div class="auth--form__group">
-                <input type="text" class="autho--form__input" placeholder="Email của bạn">
-            </div>
-            <div class="auth--form__group">
-                <input type="text" class="autho--form__input" placeholder="Mật khẩu của bạn">
-            </div>
-        </div>
-
-        <div class="auth--form_aside">
-           <div class="auth-form__help">
-               <a href="" class="auth-form__link">Quên mật khẩu</a>
-               <span class="auth--form_aside--space"></span>
-               <a href="" class="auth-form__link">Cần trợ giúp</a>
-           </div>
-        </div>    
-
-        <div class="autho--form__controls">
-            <button class="btn">TRỞ LẠI</button>
-            <button class="btn btn-primary">ĐĂNG NHẬP</buton>
-        </div>
-        </div>
-
-        <div class="auth--form__social">
-            <a href="" class=" auth--form__social--fb btn--icon">
-                <i class="auth--form__social--icon fab fa-facebook-square"></i> 
-                <span class="auth--form__social--text">Đăng nhập với facebook</span>      
-            </a>
-
-            <a href="" class="auth--form__social--gg btn--icon">
-                <i class="auth--form__social--icon fab fa-google"></i>
-                <span class="auth--form__social--text"> Đăng nhập với google</span>                                
-            </a>
-        </div>
-
-    </div> 
+    </div>
 </body>
 </html>
